@@ -87,15 +87,18 @@ li.appendChild(document.createTextNode(`. ${nome} . x . R$ ${item.preco.toFixed(
 produtosList.appendChild(li);
   });
 
-  totalGeral.textContent = `Total: R$ ${total.toFixed(2)}`;
+  // total geral que aparece no final da página
+totalGeral.textContent = `Total Geral: R$ ${total.toFixed(2)}`;
 
-let sidebarTotal = document.getElementById('sidebar-total');
-if (!sidebarTotal) {
-  sidebarTotal = document.createElement('div');
-  sidebarTotal.id = 'sidebar-total';
-  finalizarBtn.parentNode.appendChild(sidebarTotal);
+
+let boxTotal = document.getElementById('box-total');
+if (!boxTotal) {
+  boxTotal = document.createElement('div');
+  boxTotal.id = 'box-total';
+  finalizarBtn.parentNode.appendChild(boxTotal);
 }
- sidebarTotal.textContent = `Total:\nR$ ${total.toFixed(2)}`;
+// total que aparece na caixa branca
+ boxTotal.textContent = `Total:R$ ${total.toFixed(2)}`;
 
 }
 
@@ -132,6 +135,8 @@ finalizarBtn.addEventListener('click', () => {
     document.getElementById('modal-confirmacao').style.display = 'none';
   };
 });
+
+
 
 
 
