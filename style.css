@@ -1,36 +1,65 @@
-body {
-  display: flex;
-  margin: 0px 10px 10px 25px;
-  padding: 0;
+body { 
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  text-align: center;  
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-h1 {
-  color: #ffffff;
-  padding: 20px;
-  font-size: 24px;  
-  background-color: #7264f2;
-  margin-bottom: 10px ;
-  margin-top: 0px;
-  border-radius: 5px;
-  position: sticky;
-  top: 0;
-  z-index: 10; 	
+header { 
+ position:fixed;  
+ top: 0;
+ width: 100%;
+ background-color: #023047; /* tom roxo */ 
+ border-radius: 0 0 28px 28px;
+ z-index: 2;
+ padding: 0px;
+ text-align: center;
+ color: #ffffff;    
 }
-h2{
-  color: #333;
-  padding: 10px 20px;
+
+header h1 {
+  font-size: 2.5rem;   
+}
+
+h2 {
+  color: #ffffff;
+  padding: 10px;
   font-size: 24px;  
-  background-color: #c6ca59;
+  background-color: #053a47;
+  margin:75px 15px 10px 5px ;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 2; 
+  left:20px;   
+  width:calc(100% - 70px);
+  text-align: center;
+}
+h3 {
+  color: #0a0808;
+  padding: 10px 10px 10px 20px;
+  text-align: center;
+  font-size: 20px;  
+  background-color: #ffb703;
   margin-bottom: 5px;
   border-radius: 5px;
 }
+
+h4 {
+  color: #0a0808;
+  padding: 15px 10px 10px 20px;
+  text-align: center;
+  font-size: 20px;  
+  background-color: #219ebc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
 .main-content {
-  margin-left: 115px;  
-  padding: 5px;
-  width: calc(100% - 120px);
+  margin-top:130px; 
+  padding: 10px;
+  width: 100%;
 }
 
 .container {
@@ -38,11 +67,43 @@ h2{
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 15px;
   max-width: 1800px;
-  margin: 0 auto 30px 0px;
+  margin: 0px auto 20px 0px;
+}
+
+.close-btn:hover {
+  color: #d32f2f;
+}
+#produtos-list button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#produtos-list button:hover {
+  background-color: #ec5a4c;
+}
+
+#produtos-list {
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#produtos-list li {
+  background-color: #e4f05f;
+  padding: 8px 5px 5px 5px; 
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 .box {
-  background-color: #4CAF50;
+  background-color: #219ebc;
   color: white;
   padding: 15px;
   border-radius: 8px;
@@ -61,86 +122,30 @@ h2{
 .box:hover {
   transform: scale(1.05);
 }
-
-
-#produtos-list {
-  list-style: none;
-  padding: 0;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: left;
-}
-
-#produtos-list li {
-  background-color: #cfd516;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-}
-
-.close-btn:hover {
-  color: #d32f2f;
-}
-
-.sidebar {
-  width: 100px;
-  background-color: #7264f2;
-  padding: 20px; 
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-right: 2px solid #999;
-}
-#sidebar-total {
-  background-color: #fff;
+#box-total {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);    /* distância da borda direita */
+  background-color: #ffffff;
   color: #000000;
-  padding: 20px;
-  margin-top: 10px;
+  padding: 10px;
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
   border: 1px solid #999;
   white-space: pre-line;
-  width:65px;
+  width: 120px;
+  z-index: 5;
 }
 
-#finalizar-btn { 
-
-  padding: 10px 20px;
-  margin-bottom: 5px;
-
-  box-shadow:inset 0px 1px 0px 0px #a4e271;
-	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
-	background-color:#89c403;
-	border-radius:6px;
-	border:1px solid #74b807;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528009;
-
- 
+#finalizar-btn {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-#produtos-list button {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#produtos-list button:hover {
-  background-color: #ec5a4c;
-}
 
 .modal {
   display: none; 
@@ -162,11 +167,6 @@ h2{
   width: 300px;
   border-radius: 10px;
   text-align: center;
-}
-
-#valor-pago {
-  width: 100px;
-  margin: 10px 0;
 }
 
 .myButtonConfirm {
@@ -241,6 +241,35 @@ h2{
 	background-color:#e9e9e9;
 }
 .myButtonCancel:active {
+	position:relative;
+	top:1px;
+}
+#valor-pago {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.myButtonFinalizar {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffb703;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButtonFinalizar:hover {
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButtonFinalizar:active {
 	position:relative;
 	top:1px;
 }
