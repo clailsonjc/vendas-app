@@ -141,7 +141,7 @@ h4 {
 
 #finalizar-btn {
   position: absolute;
-  left: 30px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
