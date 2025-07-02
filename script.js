@@ -98,7 +98,7 @@ if (!boxTotal) {
   finalizarBtn.parentNode.appendChild(boxTotal);
 }
 // total que aparece na caixa branca
- boxTotal.textContent = `Total:R$ ${total.toFixed(2)}`;
+ boxTotal.textContent = `Total:\nR$ ${total.toFixed(2)}`;
 
 }
 
