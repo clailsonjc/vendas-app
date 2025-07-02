@@ -125,7 +125,7 @@ h4 {
 #box-total {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 5px;
   transform: translateY(-50%);    /* distância da borda direita */
   background-color: #ffffff;
   color: #000000;
@@ -135,7 +135,7 @@ h4 {
   text-align: center;
   border: 1px solid #999;
   white-space: pre-line;
-  width: 120px;
+  width: 100px;
   z-index: 5;
 }
 
