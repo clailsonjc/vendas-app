@@ -8,7 +8,7 @@ const produtos = [
   { nome: "REFRI", preco: 4.00 }, 
   { nome: "MUGUNZÁ", preco: 5.00 },
   { nome: "PIPOCA GOURM", preco: 6.00 },
-   { nome: "BRINCADEIRAS, preco: 4.00 },  
+   { nome: "BRINCADEIRAS", preco: 4.00 },  
      { nome: "ESTALINHO", preco: 2.00 },  
   { nome: "MARUJINHO", preco: 2.00 }
   
