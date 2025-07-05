@@ -1,25 +1,13 @@
 const produtos = [
-  { nome: "AGUA", preco: 2.00 },
-  { nome: "AGUA COM GÁS", preco: 3.00 },
-  { nome: "BOLO", preco: 4.00 },
-  { nome: "CACHORRO-QUENTE", preco: 4.00 },
-  { nome: "COCADA", preco: 3.00 },
-  { nome: "COCA-PET", preco: 3.50 },
-  { nome: "CANJICA", preco: 4.00 },
-  { nome: "DINDIM", preco: 3.50 },
-  { nome: "DOCINHO", preco: 2.00 },
-  { nome: "PRATINHO", preco: 12.00 },
-  { nome: "REFRI/SUCO", preco: 2.00 },
-  { nome: "REFRI LATA", preco: 5.00 }, 
-  { nome: "SÃO GERARDO PET", preco: 1.50 },
-  { nome: "PÃO DE QUEIJO", preco: 2.00 },
-  { nome: "PASTEL", preco: 3.00 },
-  { nome: "PUDIM", preco: 4.00 },
-  { nome: "MUGUNZÁ", preco: 4.00 },
-  { nome: "PIPOCA SAL", preco: 2.00 },
-  { nome: "PIPOCA GOURM", preco: 2.00 },
-  { nome: "CREPE", preco: 5.00 }
-
+  { nome: "AGUA", preco: 3.00 },  
+  { nome: "BOLO", preco: 5.00 },
+  { nome: "COCADA", preco: 4.00 },
+  { nome: "PRATINHO", preco: 10.00 },
+  { nome: "SUCO 200 ml", preco: 4.00 },
+  { nome: "REFRI LATA", preco: 4.00 }, 
+  { nome: "MUGUNZÁ", preco: 5.00 },
+  { nome: "PIPOCA GOURM", preco: 6.00 }
+  
 ];
 
 const container = document.getElementById('box-container');
