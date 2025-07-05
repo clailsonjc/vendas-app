@@ -1,6 +1,6 @@
 const produtos = [
   { nome: "AGUA", preco: 3.00 },  
-   { nome: "AGUA COM GÁS", preco: 3.00 },  
+   { nome: "AGUA COM GÁS", preco: 3.50 },  
   { nome: "BOLO", preco: 5.00 },
   { nome: "COCADA", preco: 3.00 },
   { nome: "PRATINHO", preco: 10.00 },
