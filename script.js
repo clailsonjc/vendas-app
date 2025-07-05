@@ -1,12 +1,16 @@
 const produtos = [
-  { nome: "AGUA", preco: 3.00 },  
+  { nome: "ÁGUA", preco: 3.00 },  
+   { nome: "ÁGUA COM GÁS", preco: 3.00 },  
   { nome: "BOLO", preco: 5.00 },
-  { nome: "COCADA", preco: 4.00 },
+  { nome: "COCADA", preco: 3.00 },
   { nome: "PRATINHO", preco: 10.00 },
-  { nome: "SUCO 200 ml", preco: 4.00 },
-  { nome: "REFRI LATA", preco: 4.00 }, 
+  { nome: "SUCO 200 ml", preco: 3.00 },
+  { nome: "REFRI", preco: 4.00 }, 
   { nome: "MUGUNZÁ", preco: 5.00 },
-  { nome: "PIPOCA GOURM", preco: 6.00 }
+  { nome: "PIPOCA GOURM", preco: 6.00 },
+   { nome: "BRINCADEIRAS, preco: 4.00 },  
+     { nome: "ESTALINHO", preco: 2.00 },  
+  { nome: "MARUJINHO", preco: 2.00 }
   
 ];
 
